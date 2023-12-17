@@ -3,7 +3,7 @@
 // 遞迴函數
 int CanReachEnd(int n , int maze[n][n] , int x, int y) {
     // 超出邊界或遇到牆壁
-    if (x < 0 || x >= n || y < 0 || y >= n || maze[x][y] == 1) {
+    if (x < 0 || x>= n || y < 0 || y >= n || maze[x][y] == 1) {
         return 0;
     }
 

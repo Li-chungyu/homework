@@ -1,6 +1,3 @@
-#include <stdio.h>
-
-//init
 int main() {
     int arr[3][4] = {
         {1, 2, 3, 4},
@@ -15,11 +12,4 @@ int main() {
     printf("Element at row 2, column 1: %d\n", *(ptr+4));
 
     return 0;
-}
-
-int main() {
-  int *p;
-  init(&p);
-  printf("%d, %d",*(p+4),*(p+31));
-  return 0;
 }
