@@ -27,7 +27,7 @@ axis_t Move(stack_t* StackPtr,axis_t position){
         if(location.x<0 || location.x>9 || location.y<0 || location.y>9){
             continue;
         }
-        if(maze[location.x][location.y] ==0 && maze[location.x][location.y] !='^'){
+        if(maze[location.x][location.y] ==0 && mark[location.x][location.y] !='^'){
             mark[location.x][location.y] = '^';
             push(StackPtr,location);
         }

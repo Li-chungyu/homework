@@ -19,9 +19,11 @@ typedef struct stack{
 }stack_t;
 
 //傳指標代替傳整個值
-int push(stack_t *StackPtr,axis_t element);
+void push(stack_t *StackPtr,axis_t element);
 
-axis_t pop(stack_t *StackPtr);  
+axis_t pop(stack_t *StackPtr); 
+
+
 
 #endif
 

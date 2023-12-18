@@ -5,10 +5,6 @@ static int isEmpty(stack_t *StackPtr){
     return 0;
 }
 
-static int isFull(stack_t *StackPtr){
-    if(StackPtr->top == Max-1) return 1;
-    return 0;
-}
 
 
 //取
@@ -19,10 +15,8 @@ axis_t pop(stack_t *StackPtr){
 }
 
 //存
-int push(stack_t *StackPtr,axis_t element){
-    if(isFull(StackPtr)) return 0;
+void push(stack_t *StackPtr,axis_t element){
     StackPtr->top++;
     StackPtr->element[StackPtr->top] = element; 
-    return 1;
 }
 
