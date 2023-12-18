@@ -1,9 +1,9 @@
 //避免標頭檔被重複呼叫
-#ifndef _SEARCH__H
-#define _SEARCH__H
+#ifndef _SEARCH_H
+#define _SEARCH_H
 
 
-#define Max 10
+#define Max 11
 
 #define EQU(p,q) (p.x==q.x && p.y==q.y)
 

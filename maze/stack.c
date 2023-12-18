@@ -13,15 +13,15 @@ static int isFull(stack_t *StackPtr){
 
 //取
 axis_t pop(stack_t *StackPtr){
-    axis_t temp = {-1-1};
+    axis_t temp = {-1,-1};
     if(isEmpty(StackPtr)) return temp;
     return StackPtr->element[StackPtr->top--];
 }
 
 //存
 int push(stack_t *StackPtr,axis_t element){
-    if(isFull) return 0;
-    StackPtr++;
+    if(isFull(StackPtr)) return 0;
+    StackPtr->top++;
     StackPtr->element[StackPtr->top] = element; 
     return 1;
 }
