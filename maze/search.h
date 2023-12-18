@@ -1,30 +1,27 @@
+//避免標頭檔被重複呼叫
 #ifndef _SEARCH__H
 #define _SEARCH__H
 
 
 #define Max 10
 
-//巨集(後面的括弧為等值的程式)
 #define EQU(p,q) (p.x==q.x && p.y==q.y)
 
-typedef struct axis_1{
+typedef struct axis{
     int x;
     int y;
-}axis;
+}axis_t;
 
-//固定大小
-typedef struct stack_1{
+
+typedef struct stack{
     int top;
-    int element[Max*Max];
-}stack;
+    axis_t element[Max*Max];
+}stack_t;
 
-//可以動態分配(要再加一個stackinit來malloc)
-typedef struct stack_2{
-    int top;
-    int *element;
-}
+//傳指標代替傳整個值
+int push(stack_t *StackPtr,axis_t element);
 
-
+axis_t pop(stack_t *StackPtr);  
 
 #endif
 
