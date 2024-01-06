@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 
 int main(){
     int row,column,N;
@@ -10,7 +11,7 @@ int main(){
     
     while(k<N){
         int a,b,c;
-        scanf("%d%d%d",&a,&b,&c);
+        scanf("%d%d%d",&a,&b,&c);       
         matrix[a][b]=c;
         k++;
     }
